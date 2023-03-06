@@ -2,57 +2,57 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 app.config['JSON_SORT_KEYS'] = False
-personagens = [
+characters = [
     {
         'id': 1,
-        'nome': 'Ana',
-        'funcao': 'Suporte',
+        'name': 'Ana',
+        'role': 'Support',
         'counter': ['reaper']
     },
     {
         'id': 2,
-        'nome': 'Baptiste',
-        'funcao': 'Suporte',
+        'name': 'Baptiste',
+        'role': 'Support',
         'counter': ['brigitte']
     },
     {
         'id': 3,
-        'nome': 'Brigitte',
-        'funcao': 'Suporte',
+        'name': 'Brigitte',
+        'role': 'Support',
         'counter': ['genji']
     }
 ]
 
 @app.route('/', methods=['GET'])
 def home():
-    return "Bem vindo a API Overwatch 2"
+    return "Welcome to Overwatch 2 API"
 
-@app.route('/personagens', methods=['GET'])
-def obter_personagens():
-    return jsonify(personagens)
+@app.route('/characters', methods=['GET'])
+def get_characters():
+    return jsonify(characters)
 
-@app.route('/personagens/<nome>', methods=['GET'])
-def obter_personagens_por_nome(nome):
-    for personagem in personagens:
-        if personagem.get('nome').lower() == nome.lower():
-            return jsonify(personagem)
+@app.route('/characters/<name>', methods=['GET'])
+def get_characters_by_name(name):
+    for char in characters:
+        if char.get('name').lower() == name.lower():
+            return jsonify(char)
 
-@app.route('/personagens/<int:id>', methods=['GET'])
-def obter_personagens_por_id(id):
-    for personagem in personagens:
-        if personagem.get('id') == id:
-            return jsonify(personagem)
+@app.route('/characters/<int:id>', methods=['GET'])
+def get_characters_by_id(id):
+    for char in characters:
+        if char.get('id') == id:
+            return jsonify(char)
 
-@app.route('/personagens/<nome>/counter', methods=['GET'])
-def obter_counter_do_personagem_por_nome(nome):
-    for personagem in personagens:
-        if personagem.get('nome').lower() == nome.lower():
-            return jsonify(personagem.get('counter'))
+@app.route('/characters/<name>/counter', methods=['GET'])
+def get_character_counter_by_name(name):
+    for char in characters:
+        if char.get('name').lower() == name.lower():
+            return jsonify(char.get('counter'))
 
-@app.route('/personagens/<int:id>/counter', methods=['GET'])
-def obter_counter_do_personagen_por_id(id):
-    for personagem in personagens:
-        if personagem.get('id') == id:
-            return jsonify(personagem.get('counter'))
+@app.route('/characters/<int:id>/counter', methods=['GET'])
+def get_character_counter_by_id(id):
+    for char in characters:
+        if char.get('id') == id:
+            return jsonify(char.get('counter'))
 
 app.run(port=5001, host='localhost', debug=True)
