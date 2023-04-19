@@ -4,6 +4,7 @@ Eventually, API tests will be added to the project too
 ## Requirements from the project
 * python 3
 * flask (use pip3 to install flask)
+* requests (use pip3 to install requests)
 
 ## How to start the API
 python3 app.py
