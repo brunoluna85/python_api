@@ -1,0 +1,100 @@
+{
+    "page": 3,
+    "page_size": 3,
+    "pages_total": 3,
+    "items_total": 9,
+    "data": [
+      {
+        "company": "sitxx",
+        "locations": [
+          {
+            "name": "First Location",
+            "template_name": "first_location",
+            "city": "LocationTown",
+            "state": "LO",
+            "addressline1": "123 Location Street",
+            "addressline2": null,
+            "zipcode": "11111-2222",
+            "country": "US",
+            "updated_at": "2023-07-24T18:47:23.903Z",
+            "nodes": [ 
+              {
+                "hostname": "sit0001red0",
+                "hardware_type": "reliant managed hardware",
+                "updated_at": "2023-07-24T18:47:23.903Z"
+              },
+              {
+                "hostname": "sit0002red0",
+                "hardware_type": "reliant managed hardware",
+                "updated_at": "2023-07-24T18:47:23.903Z"
+              }
+            ]
+          },
+          {
+            "name": "Second Location",
+            "template_name": "second_location",
+            "city": "LocationTown",
+            "state": "LO",
+            "addressline1": "123 Location Street",
+            "addressline2": null,
+            "zipcode": "11111-2222",
+            "country": "JP",
+            "updated_at": "2023-07-24T18:47:23.903Z",
+            "nodes": [
+              {
+                "hostname": "sit0003red0",
+                "hardware_type": "reliant managed hardware",
+                "updated_at": "2023-07-24T18:47:23.903Z"
+              },
+              {
+                "hostname": "sit0004red0",
+                "hardware_type": "reliant managed hardware",
+                "updated_at": "2023-07-24T18:47:23.903Z"
+              }
+            ]
+          },
+          {
+            "name": "Third Location",
+            "template_name": "third_location",
+            "city": "LocationTown",
+            "state": "LO",
+            "addressline1": "123 Location Street",
+            "addressline2": null,
+            "zipcode": "11111-2222",
+            "country": "NN",
+            "updated_at": "2023-07-24T18:47:23.903Z",
+            "nodes": [
+            ]
+          }
+        ]
+      },
+      {
+        "company": "cmpny",
+        "locations": [
+          {
+            "name": "Some Place",
+            "template_name": "some_place",
+            "city": "Alyshaville",
+            "state": "MN",
+            "addressline1": "824 Glover Glens",
+            "addressline2": "Suite 980",
+            "zipcode": "97586-0519",
+            "country": "UY",
+            "updated_at": "2023-07-24T18:43:17.257Z",
+            "nodes": [
+              {
+                "hostname": "cmp0001red0",
+                "hardware_type": "reliant managed hardware",
+                "updated_at": "2023-07-24T18:47:23.903Z"
+              },
+              {
+                "hostname": "cmp0002red0",
+                "hardware_type": "reliant managed hardware",
+                "updated_at": "2023-07-24T18:47:23.903Z"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

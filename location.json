@@ -1,0 +1,23 @@
+{
+    "name": "First Location",
+    "template_name": "first_location",
+    "city": "LocationTown",
+    "state": "LO",
+    "addressline1": "123 Location Street",
+    "addressline2": null,
+    "zipcode": "11111-2222",
+    "country": "US",
+    "updated_at": "2023-07-24T18:47:23.903Z",
+    "nodes": [ 
+      {
+        "hostname": "sit0001red0",
+        "hardware_type": "reliant managed hardware",
+        "updated_at": "2023-07-24T18:47:23.903Z"
+      },
+      {
+        "hostname": "sit0002red0",
+        "hardware_type": "reliant managed hardware",
+        "updated_at": "2023-07-24T18:47:23.903Z"
+      }
+    ]
+}
